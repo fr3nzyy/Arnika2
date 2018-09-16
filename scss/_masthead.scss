@@ -1,12 +1,15 @@
 // Styling for the masthead
 header.masthead {
-  // TIP: Background images are set within the HTML using inline CSS!
+   //TIP: Background images are set within the HTML using inline CSS!
+  //background-image: url("../img/backgroundPicture.jpg") !important;
+  //height: 300px;
   margin-bottom: 50px;
-  background: no-repeat center center;
+  //background: no-repeat center center;
   background-color: $gray-600;
   background-attachment: scroll;
   position: relative;
   @include background-cover;
+
   .overlay {
     position: absolute;
     top: 0;
@@ -19,10 +22,10 @@ header.masthead {
   .page-heading,
   .post-heading,
   .site-heading {
-    padding: 200px 0 150px;
+    padding: 100px 0 100px;
     color: white;
     @media only screen and (min-width: 768px) {
-      padding: 200px 0;
+      padding: 100px 0;
     }
   }
   .page-heading,
@@ -79,4 +82,15 @@ header.masthead {
       }
     }
   }
+}
+.halfhead {
+     height: 100px;
+   background: no-repeat ;
+   background-position: 0px -300px;
+   background-image: url("../img/search.jpg") !important;
+   }
+.fullhead {
+  background-image: url("../img/backgroundPicture.jpg") !important;
+  height: 300px;
+  background: no-repeat center center;
 }

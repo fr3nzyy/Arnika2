@@ -103,7 +103,17 @@ gulp.task('browserSync', function() {
 
 // Dev task
 gulp.task('dev', ['css', 'js', 'browserSync'], function() {
-  gulp.watch('./scss/*.scss', ['css']);
-  gulp.watch('./js/*.js', ['js']);
-  gulp.watch('./*.html', browserSync.reload);
+  gulp.watch('scss/*.scss', ['css']);
+  gulp.watch('js/*.js', ['js']);
+  gulp.watch('*.html', browserSync.reload);
 });
+// Static Server + watching scss/html files
+// gulp.task('serve', ['sass'], function() {
+//
+//     browserSync.init({
+//         server: "."
+//     });
+//
+//     gulp.watch(['node_modules/bootstrap/scss/bootstrap.scss', 'scss/*.scss'], ['sass']);
+//     gulp.watch("*.html").on('change', browserSync.reload);
+// });

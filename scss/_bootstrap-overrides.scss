@@ -1,7 +1,7 @@
 // Bootstrap overrides for this template
 .btn {
   font-size: 14px;
-  font-weight: 800;
+  //font-weight: 800;
   padding: 15px 25px;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -19,6 +19,7 @@
     background-color: darken($primary, 7.5) !important;
     border-color: darken($primary, 7.5) !important;
   }
+  width: 215px;
 }
 
 .btn-lg {
@@ -26,4 +27,17 @@
   padding: 25px 35px;
 }
 
-.site-heading{padding:100px 0}
+.site-heading {
+  height: 100px;
+}
+
+.container {
+  padding: 0px 50px;
+}
+
+h6 {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.btn-block+.btn-block{margin-top:0;}
